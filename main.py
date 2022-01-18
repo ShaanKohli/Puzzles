@@ -1,3 +1,3 @@
-s = "Hi my name is Shaan    "
+digits = [1,2,3]
 
-print(list(s.split(" ")))
+print(digits[-1]+1)
