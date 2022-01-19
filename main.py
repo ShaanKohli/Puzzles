@@ -1,3 +1,9 @@
-digits = [1,2,3]
+nums1 = [1,2,3,4,0,0,0]
 
-print(digits[-1]+1)
+nums2 = [2,5,6]
+
+nums1 = nums1[0:3]+nums2
+
+nums1 = sort(nums1)
+
+print(nums1)
