@@ -34,7 +34,7 @@ class Solution:
             remainder = columnNumber%26
             whole = columnNumber//26
             
-            if (remainder == 0) and (whole >=1):
+            if (remainder == 0):
                 excel_col = alpha[26] + excel_col
                 columnNumber = (whole -1)
                 
