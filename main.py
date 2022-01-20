@@ -1,3 +1,3 @@
 num = 701
 
-print(num//26)
+print(ord(1))
