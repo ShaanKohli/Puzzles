@@ -1,3 +1,4 @@
-num = 701
+import math
+num = math.log(4097)/math.log(2)
 
-print(ord(1))
+print(num)
