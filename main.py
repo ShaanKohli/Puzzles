@@ -1,4 +1,11 @@
-import math
-num = math.log(4097)/math.log(2)
+s = 'ab'
+t=  'a'
+count = 0
+for i in s:
+  if i in t:
+    count +=1
 
-print(num)
+if count == len(t):
+  print(True)
+else:
+  print(False)
