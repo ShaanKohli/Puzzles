@@ -54,7 +54,7 @@ FROM (
   INNER JOIN students s ON a.student_id = s.student_id
   WHERE a.attendance = 1
   GROUP BY 1,2
-  ORDER BY date DESC) x
+  ORDER BY date) x
 WHERE x.date = current_date
 ORDER BY DIFF_ATT
 LIMIT 1
