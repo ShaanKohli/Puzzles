@@ -1,21 +1,3 @@
--- # customer_plan_history
-
--- # date                  VARCHAR,
--- # account_id        BIGINT,
--- # plan_tier           [‘enterprise’, ‘business’,  'premium', 'free'],
--- # revenue            DOUBLE,
--- # paid_seats       INT
-
-
--- date       | account_id | plan_tier | revenue | paid_seats
--- 2020-01-01 | 123        | 'free'    | 0       | 0
--- 2020-01-02 | 123        | 'free'    | 0       | 0
--- 2020-01-03 | 123        | 'business'| 400     | 15
--- 2020-01-01 | 456        | 'premium' | 60      | 5
--- 2020-01-02 | 456        | 'premium' | 60      | 5
--- 2020-01-03 | 456        | 'premium' | 60      | 5
-
--- How many accounts upgraded to a higher plan tier in the last month?
 ---- CALL THIS the base_table
 SELECT 
   account_id,
