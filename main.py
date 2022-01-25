@@ -1,8 +1,32 @@
-s = ["h","e","l","l","o"]
+nums1  =[1,2,2,1]
+nums2 = [2,2]
 
-traverse_length = len(s)//2
+store_nums= {}
         
-for i in range(0, traverse_length):
-  holding_pointer = s[i]
-  s[i] = s[len(s) -1 - i]
-  s[len(s) -1 - i] = holding_pointer
+result_list = []
+        
+for i in nums1:
+  if i not in store_nums:
+    store_nums[i] = 1
+  if i in store_nums:
+    store_nums[i] += 1
+
+
+
+for i in nums2:
+  if i in store_nums:
+    if store_nums[i] == 1:
+      del store_nums[i]
+      result_list.append(i)
+    
+    if store_nums[i] >= 2:
+      store_nums[i] -=1
+      result_list.append(i)
+
+    
+
+  
+  
+    print(result_list)
+        
+
